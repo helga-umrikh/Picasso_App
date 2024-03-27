@@ -1,17 +1,17 @@
 import React from 'react'
-import { Layout } from 'antd'
+import './HeaderComponent.scss'
+import { Layout, Typography } from 'antd'
 const { Header } = Layout
-
-const headerStyle = {
-  color: '#fff',
-  height: 64,
-  paddingInline: 48,
-  lineHeight: '64px',
-  backgroundColor: '#4096ff',
-};
+const { Title } = Typography
 
 const HeaderComponent = () => {
-    return <Header style={headerStyle}>Picasso App</Header>
+    return (
+        <Header className="header">
+            <Title level={1} className="header__title">
+                Picasso App
+            </Title>
+        </Header>
+    )
 }
 
 export default HeaderComponent

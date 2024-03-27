@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #FFFFFF;
+  height: 64px;
+  padding-inline: 48px;
+  line-height: 64px;
+  background-color: #4096FF ;
+
+  &__title {
+    color: #FFFFFF !important;
+    margin: 0 !important;
+  }
+}
