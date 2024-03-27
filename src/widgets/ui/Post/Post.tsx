@@ -1,19 +1,26 @@
 import React from 'react'
+import './Post.scss'
 import Button from '../../../entities/ui/Button'
-import { List, Typography } from 'antd'
+import { List } from 'antd'
 import { PostProps } from '../../interfaces/PostProps'
-const { Text, Title } = Typography
 
-const Post: React.FC<PostProps> = ({ id, title, body }) => {
+const Post: React.FC<PostProps> = ({ post }) => {
     return (
-        <List.Item>
-            <Text>{id}</Text>
-            <Title level={5}>{title}</Title>
-            <Text>
-                {body.length > 20 ? body.substring(0, 50) + '...' : body}
-            </Text>
-            <Button route={`/post/${id}`} title={'Просмотр'} />
-        </List.Item>
+        <div className="post">
+            <div>
+                <div className="post__id">{post.id}</div>
+                <List.Item.Meta
+                    title={post.title}
+                    description={
+                        post.body.length > 20
+                            ? post.body.substring(0, 50) + '...'
+                            : post.body
+                    }
+                />
+            </div>
+
+            <Button route={`/post/${post.id}`} title={'Просмотр'} />
+        </div>
     )
 }
 
