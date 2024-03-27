@@ -1,9 +1,6 @@
 import React from 'react'
+import Feed from '../../widgets/ui/Feed/Feed'
 
-const HomePage = () => {
-  return (
-    <div>Home</div>
-  )
-}
+const HomePage = () => <Feed />
 
 export default HomePage
