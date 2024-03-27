@@ -9,6 +9,9 @@ Picasso App is an interface for SPA application. It provides users with access t
 
 The app is built using React, RTK Query and styled using SCSS
 
+## Link to deploy
+[DEPLOY](https://picasso-app-five.vercel.app/)
+
 # Getting Started
 
 ## Installation
