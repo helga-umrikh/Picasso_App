@@ -1,0 +1,14 @@
+.post-info-panel {
+  height: 100% !important;
+  padding: 10%;
+
+  &__container {
+    max-width: '1000px';
+    margin: '0 auto' ;
+    flex-wrap: wrap !important;
+  }
+
+  &__meta {
+    margin: 0 0 2em 0 !important;
+  }
+}
